@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "chap05App", "chap05App\chap05App.csproj", "{269D74B3-BA82-4D09-A3B4-72084CE7898B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwitchTestApp", "SwitchTestApp\SwitchTestApp.csproj", "{D32546AF-53F0-4DEF-99DA-57C297FC786E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoopTestApp", "LoopTestApp\LoopTestApp.csproj", "{D8E55342-FFB1-470F-A313-E7D915790090}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{269D74B3-BA82-4D09-A3B4-72084CE7898B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{269D74B3-BA82-4D09-A3B4-72084CE7898B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{269D74B3-BA82-4D09-A3B4-72084CE7898B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D32546AF-53F0-4DEF-99DA-57C297FC786E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D32546AF-53F0-4DEF-99DA-57C297FC786E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D32546AF-53F0-4DEF-99DA-57C297FC786E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D32546AF-53F0-4DEF-99DA-57C297FC786E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8E55342-FFB1-470F-A313-E7D915790090}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8E55342-FFB1-470F-A313-E7D915790090}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8E55342-FFB1-470F-A313-E7D915790090}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8E55342-FFB1-470F-A313-E7D915790090}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
