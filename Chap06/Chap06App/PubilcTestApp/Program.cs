@@ -16,9 +16,12 @@ namespace PubilcTestApp
             {
                 Console.WriteLine("프로필 출력시 오류가 발생했습니다.");
             }
+            PrintProfile(phone : "010-4456-5525");
+
+
         }
 
-        public static int PrintProfile(string name, string phone)
+        public static int PrintProfile(string name = "홍길동", string phone = "010-7979-7979")
         {
             if (string.IsNullOrEmpty(name))
             {

@@ -5,11 +5,13 @@ VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chap06App", "Chap06App\Chap06App.csproj", "{9FEE00E2-5727-42CB-8374-15107A9E4963}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PubilcTestApp", "PubilcTestApp\PubilcTestApp.csproj", "{62B16133-9240-44D7-927E-29DBDEBA75D5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProfileTestApp", "PubilcTestApp\ProfileTestApp.csproj", "{62B16133-9240-44D7-927E-29DBDEBA75D5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortingTestApp", "SortingTestApp\SortingTestApp.csproj", "{188F2DF1-D0D1-48D2-A9E6-10D98C226E10}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefOutTestApp", "RefOutTestApp\RefOutTestApp.csproj", "{5DA637FF-F194-4D10-AD20-A320C660BF76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OverloadTestApp", "OverloadTestApp\OverloadTestApp.csproj", "{6FCB2B46-0ACE-4180-B447-D22F0414D58F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{5DA637FF-F194-4D10-AD20-A320C660BF76}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5DA637FF-F194-4D10-AD20-A320C660BF76}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5DA637FF-F194-4D10-AD20-A320C660BF76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FCB2B46-0ACE-4180-B447-D22F0414D58F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FCB2B46-0ACE-4180-B447-D22F0414D58F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FCB2B46-0ACE-4180-B447-D22F0414D58F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FCB2B46-0ACE-4180-B447-D22F0414D58F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
