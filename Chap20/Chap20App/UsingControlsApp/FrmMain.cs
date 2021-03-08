@@ -12,25 +12,32 @@ namespace UsingControlsApp
 {
     public partial class FrmMain : Form
     {
+        Random random = new Random(37);
+        
         public FrmMain()
         {
+
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        #region 이벤트핸들러영역
         private void FrmMain_Load(object sender, EventArgs e)
         {
+            LsvDummy.Columns.Add("Name");
+            LsvDummy.Columns.Add("Depth");
+
             var FontsList = FontFamily.Families;
-            foreach ( var font in FontsList)
+            foreach (var font in FontsList)
             {
                 CboFonts.Items.Add(font.Name);
             }
         }
         //콤보박스, 체크박스 값으로 글자  변경하는 메소드
+
+        #endregion
+
+
+        #region 사용자메서드 영역
         private void ChangeFont()
         {
             if (CboFonts.SelectedIndex < 0) return; //콤보박스에 아무것도 선택안했으면(-1) 메서드 탈출
@@ -42,7 +49,37 @@ namespace UsingControlsApp
 
             TxtResult.Font = new Font((string)CboFonts.SelectedItem, 14, style);
         }
+        /// <summary>
+        /// //트리뷰 내용 리스트뷰에 표시
+        /// </summary>
+       
+        private void DisplayTreeToList()
+        {
+            LsvDummy.Items.Clear();
+            foreach (TreeNode node in TrvDummy.Nodes)
+            {
+                DisplayTreeToList(node);
+            }
+        }
 
+        private void DisplayTreeToList(TreeNode node)
+        {
+            LsvDummy.Items.Add(new ListViewItem(new string[] { node.Text, node.FullPath })); //리스트뷰안에 아이템을 넣는데 위에서 name,depth 2개로 만들어서 배열을 2개로 헤서 추가
+
+            foreach (TreeNode item in node.Nodes)
+            {
+                DisplayTreeToList(item);
+            }
+        }
+        #endregion
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+        //콤보박스, 체크박스, 값으로 글자 변경하는 메소드
         private void ChkItalic_CheckedChanged(object sender, EventArgs e)
         {
             ChangeFont();
@@ -61,6 +98,56 @@ namespace UsingControlsApp
         private void TrbHandle_Scroll(object sender, EventArgs e)
         {
             PrbDisplay.Value = TrbHandle.Value;
+        }
+
+        private void BtnModal_Click(object sender, EventArgs e)
+        {
+            Form frm = new Form();
+            frm.Text = "Modal Form";
+            frm.Width = 300;
+            frm.Height = 100;
+            frm.BackColor = Color.Coral;
+            frm.ShowDialog(); //모달창 띄우기 , 띄우는 동안은 아무것도 안댄다
+        }
+
+        private void BtnModaless_Click(object sender, EventArgs e)
+        {
+            Form frm = new Form();
+            frm.Text = "Modaless Form";
+            frm.Width = 300;
+            frm.Height = 100;
+            frm.BackColor = Color.GreenYellow;
+            
+            frm.Show(); //모달창 띄우기 , 띄우는 동안 다른작업도 가능하다 
+        }
+
+        private void BtnMsgBox_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(TxtResult.Text, "타이틀", MessageBoxButtons.YesNo,MessageBoxIcon.Error); // 메세지박스에 쓰는 글자가 뜨고 위에바에는 타이틀이라는 글자뜸, //메세지박스버튼에 예 아니오 뜰 수 있다
+        }
+
+        private void groupBox3_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnAddRoot_Click(object sender, EventArgs e)
+        {
+            TrvDummy.Nodes.Add(random.Next().ToString());
+
+            DisplayTreeToList();
+        }
+
+        private void BtnAddChild_Click(object sender, EventArgs e)
+        {
+            if (TrvDummy.SelectedNode == null)
+            {
+                MessageBox.Show("선택된 노드가 없습니다.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            TrvDummy.SelectedNode.Nodes.Add(random.Next().ToString());
+            TrvDummy.SelectedNode.Expand(); //윈도우 옆에 파일을 축소 하고 확대하는것
+            DisplayTreeToList();
         }
     }
 }
