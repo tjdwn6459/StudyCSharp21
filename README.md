@@ -1,2 +1,9 @@
 # StudyCSharp21
-Csharp repository
+PKNU C# repository
+
+##기본학습
+- 변수
+- 
+
+
+
