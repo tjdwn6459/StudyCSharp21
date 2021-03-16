@@ -66,10 +66,10 @@ namespace FilecoptApp
                 {
                     byte[] buffer = new byte[1024 * 1024]; //1024(1KB) *1024 ==>1MB, source에서 target로 설정한 byte로 잘라서 복사댄다
                     int nRead = 0;
-                    while ((nRead = sourceStream.Read(buffer, 0, buffer.Length)) != 0)
+                    while ((nRead = sourceStream.Read(buffer, 0, buffer.Length)) != 0)// nread의 값은 위에서 쪼개진 값을 빈공간에 채울값을 말한다
                     {
                         targetStream.Write(buffer, 0, nRead); //복사
-                        totalCopied += nRead;
+                        totalCopied += nRead; //totalCopied에서 차있는 만큼에서 반복하면서 nread의 값이 덧붙여지는것 
 
                         //프로그레스바에 복사 상태 진행표시
                         PrbCopy.Value = (int)((totalCopied / sourceStream.Length) * 100); 
