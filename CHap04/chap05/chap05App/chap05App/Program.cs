@@ -13,13 +13,14 @@ namespace chap05App
             while (true)
             {
                 Console.Write("수를 입력하세요 : ");
-                string line = Console.ReadLine(); //콘솔에서 입력값을 변수할당
+                string line = Console.ReadLine(); //콘솔에서 입력값을 변수할당 line 에서 문자로 입력을 받는다 
 
                 if (line == "quit") break;//quit라고 입력하면 프로그램 종료(break 하면서  WHILE(반복문)을 빠져나옴)
 
 
-                int number = 0;
-                int.TryParse(line, out number);//tryparse-변환이 안대는 값을 넣을때 0 값이 나옴//int.Parse(line);
+                int number = 0; //number 값 초기화 
+                int.TryParse(line, out number); //문자열로 받은 숫자를 int 형으로 변환하며 number의 값으로 빠져나온다 
+                //tryparse-변환이 안대는 값을 넣을때 0 값이 나옴//int.Parse(line);
                 //Console.WriteLine(number);
                  if (number > 0)
                 {

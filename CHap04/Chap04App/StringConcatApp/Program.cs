@@ -13,7 +13,7 @@ namespace StringConcatApp
             Console.WriteLine("숫자 더하기");
             var p2 = 456;
             Console.WriteLine(123 + p2); //579
-            Console.WriteLine("123" + p2);//123456
+            Console.WriteLine("123" + p2);//123456 "123"문자로 취급
             Console.WriteLine($"123{p2}"); //c# 6.0이후 문자열 만드는 방법
             Console.WriteLine(123 + "456");//123456
             Console.WriteLine("123" + "456"); // 123456
