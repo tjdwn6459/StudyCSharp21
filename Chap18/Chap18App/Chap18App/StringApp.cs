@@ -30,7 +30,7 @@ namespace Chap18App
 
             string s1 = "Hello";
             string s2 = "World!";
-            s1 += s2;
+            s1 += s2; // s1 = s1 + s2
             Console.WriteLine($"{s1}");
 
             string s3 = "Hello";

@@ -11,6 +11,8 @@ namespace VarTestApp
         static void Main(string[] args)
         {
             var i = 100;
+
+            //문자출력
             Console.WriteLine($"정수값은 {i}입니다");
         }
     }
