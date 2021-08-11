@@ -13,7 +13,7 @@ namespace SortingTestApp
             int x = 47, y = 5;
             Console.WriteLine($"Before Swap {x}, {y}");
 
-            Program.Swap(/*ref*/ x, /*ref*/ y);//정렬기반
+            Program.Swap(/*ref*/ x, /*ref*/ y);//정렬기반 class안의 함수를 사용 swap
 
             Console.WriteLine($"After Swap {x}, {y}");
 

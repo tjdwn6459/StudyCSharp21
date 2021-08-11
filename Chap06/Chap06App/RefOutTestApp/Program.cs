@@ -17,8 +17,9 @@ namespace RefOutTestApp
             Divide(a, b,  out val,out rem);
 
             Console.WriteLine($"{a}, {b} : a/b = {val}, a%b = {rem}");
-
-            bool isSucceed = int.TryParse("1000.74", out int result);
+            
+            //bool연산자 true 또는 false로 응답
+            bool isSucceed = int.TryParse("1000.74", out int result); //TryParse 반환값이 정상적이지 않을 경우 '0'을 반환 한다 
             Console.WriteLine($"변환결과 {isSucceed}, result 값 {result}");
             
 
