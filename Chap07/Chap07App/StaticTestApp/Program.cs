@@ -8,7 +8,9 @@ namespace StaticTestApp
 {
     class TestClass
     {
+
         public int number;
+       
         public float fnum;
 
         public float proSomething()

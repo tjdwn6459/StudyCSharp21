@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
+//1)Main에서 새로운 객체 생성 2) 부모 클래쓰 선언 3) 부모클래쓰에서 상속받은 자식 클래스 선언 ->main에서 생성자 호출 -> 함수 실행
 namespace InheritTestApp
 {
 
@@ -24,9 +26,10 @@ namespace InheritTestApp
         }
     }
 
-    class Child : Parent
+    class Child : Parent //parent의 클래스를 상속받은 child 클래쓰 
     {
         public string Color; //색상
+
         public Child(string Name) : base(Name)
         {
             Console.WriteLine($"{this.Name}.child() 생성자");

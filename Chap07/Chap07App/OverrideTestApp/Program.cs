@@ -8,7 +8,7 @@ namespace OverrideTestApp
 {
     class ArmorSuite
     {
-        //자식클래스에서 재정의할꺼야.
+        //자식클래스에서 재정의할꺼야.(자식클래쓰에서 같은 함수이름을 사용이 가능하다)
         public virtual void Initialize()
         {
             Console.WriteLine("ArmorSuite 초기화");
@@ -18,6 +18,7 @@ namespace OverrideTestApp
 
     class IronMan : ArmorSuite
     {
+        //자식클래쓰에서 재정의 함수 사용위해서는 override사용
         public override void Initialize()
         {
             base.Initialize();

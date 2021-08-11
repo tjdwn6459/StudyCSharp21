@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NewtypeCastApp
 {
-    class Mammal //포유류
+    class Mammal //Mammal 부모 클래쓰 생성
     {
 
         public string Name { get; set; }
@@ -18,7 +18,7 @@ namespace NewtypeCastApp
         }  
     }
 
-    class Dog : Mammal
+    class Dog : Mammal //Mammal 의 클래쓰를 상속 받은 Dog 자식 클래쓰 선언 
     {
         public void Bark()
         {
@@ -41,16 +41,16 @@ namespace NewtypeCastApp
             mammal.Name = "포유류";
             mammal.Nurse();
 
-            Dog ppoppi = null;// new Dog();
-            /*ppoppi.Name = "뽀삐";
+            Dog ppoppi = new Dog();// new dog();
+            ppoppi.Name = "뽀삐";
             ppoppi.Nurse();
-            ppoppi.Bark();*/
+            ppoppi.Bark();
 
 
-            /*Cat chichi = new Cat();
+            Cat chichi = new Cat();
             chichi.Name = "치치";
             chichi.Nurse();
-            chichi.Meow();*/
+            chichi.Meow();
 
             if (ppoppi is Mammal) // 뽀삐는 포유류 인가?
             {

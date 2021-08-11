@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace PartialClassApp
 {
+
+    //pattial 클래스 정의를 분할하기 위해 사용
     partial class MyClass
     {
         public void Method3() { Console.WriteLine("Method3"); }
