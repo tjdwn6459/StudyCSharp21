@@ -26,7 +26,7 @@ namespace Chap06App
             Console.WriteLine ($"Input : {p1}, {p2}");//("Input  : {0}, {1}", p1, p2);
             int result = p1 + p2;
             Console.WriteLine($"Output : {result}");
-            return result;
+            return result; //X, Y, Z의 결과 값을 RETURN해준다 
         }
     }
     
