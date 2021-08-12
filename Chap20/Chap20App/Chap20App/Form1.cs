@@ -19,7 +19,7 @@ namespace Chap20App
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show($"1번 버튼입니다.");
         }
     }
 }

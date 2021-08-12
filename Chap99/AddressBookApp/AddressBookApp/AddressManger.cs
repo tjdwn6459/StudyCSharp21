@@ -26,11 +26,16 @@ namespace AddressBookApp
         {
             //메뉴번호 입력
             Console.Write("메뉴를 선택하세요 >>> ");
-            string input = Console.ReadLine();
-            int.TryParse(input, out int result); //값이 들어가면 읽고 만족하지 않으면 0으로 나온다
-            if (!(result > 0 && result < 7)) return 0;
-            else return result;  //1~6이외의 값은 아닌 값이 댄다
-                
+            string input = Console.ReadLine(); // 메뉴 번호를 입력 받을 값
+            int.TryParse(input, out int result); // TryParse 값이 들어가면 읽고 만족하지 않으면 0으로 나온다
+            if (!(result > 0 && result < 7))
+            {
+                return 0;
+            }
+            else
+            {
+                return result;  //1~6이외의 값은 아닌 값이 댄다
+            }
 
         }
         //Console.WriteLine($"선택된 메뉴 : {menuNum}");
@@ -122,7 +127,7 @@ namespace AddressBookApp
 
             Console.ReadLine(); //화면멈춤
         }
-            
+
         public void DeleteAddress()
         {
             Console.WriteLine("주소삭제");

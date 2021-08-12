@@ -13,7 +13,7 @@ namespace UsingControlsApp
     public partial class FrmMain : Form
     {
         Random random = new Random(37);
-        
+
         public FrmMain()
         {
 
@@ -40,22 +40,28 @@ namespace UsingControlsApp
         #region 사용자메서드 영역
         private void ChangeFont()
         {
-            if (CboFonts.SelectedIndex < 0) return; //콤보박스에 아무것도 선택안했으면(-1) 메서드 탈출
-
+            //콤보박스에 아무것도 선택안했으면(-1) 메서드 탈출
+            if (CboFonts.SelectedIndex < 0)
+            {
+                return; 
+            }
             FontStyle style = FontStyle.Regular;
             if (ChkBold.Checked) style |= FontStyle.Bold; //00000001 볼드체 이진수 표현
             if (ChkItalic.Checked) style |= FontStyle.Italic;//00000010 이테리체 이진수 표현
-            //00000001 |00000010 볼드체 이면서 이테리체 이다
+                                                             //00000001 |00000010 볼드체 이면서 이테리체 이다
 
-            TxtResult.Font = new Font((string)CboFonts.SelectedItem, 14, style);
+
+            //글을 입력하는 창에 선택된 글꼴의 14포인트의 스타일이 적용되어 뜬다
+            TxtResult.Font = new Font((string)CboFonts.SelectedItem, 14, style); 
         }
         /// <summary>
         /// //트리뷰 내용 리스트뷰에 표시
         /// </summary>
-       
+
         private void DisplayTreeToList()
         {
             LsvDummy.Items.Clear();
+            //
             foreach (TreeNode node in TrvDummy.Nodes)
             {
                 DisplayTreeToList(node);
@@ -64,7 +70,7 @@ namespace UsingControlsApp
 
         private void DisplayTreeToList(TreeNode node)
         {
-            LsvDummy.Items.Add(new ListViewItem(new string[] { node.Text, node.FullPath })); //리스트뷰안에 아이템을 넣는데 위에서 name,depth 2개로 만들어서 배열을 2개로 헤서 추가
+            LsvDummy.Items.Add(new ListViewItem(new string[] { node.Text, node.FullPath })); //리스트뷰안에 아이템을 넣는데 위에서 name,depth 2개로 만들어서 배열을 2개로 해서 추가
 
             foreach (TreeNode item in node.Nodes)
             {
@@ -117,13 +123,15 @@ namespace UsingControlsApp
             frm.Width = 300;
             frm.Height = 100;
             frm.BackColor = Color.GreenYellow;
-            
+
             frm.Show(); //모달창 띄우기 , 띄우는 동안 다른작업도 가능하다 
         }
 
         private void BtnMsgBox_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(TxtResult.Text, "타이틀", MessageBoxButtons.YesNo,MessageBoxIcon.Error); // 메세지박스에 쓰는 글자가 뜨고 위에바에는 타이틀이라는 글자뜸, //메세지박스버튼에 예 아니오 뜰 수 있다
+            // 메세지박스에 쓰는 글자가 뜨고 위에바에는 "타이틀"이라는 글자뜸,
+            //메세지박스버튼에 예 아니오 뜰 수 있다
+            MessageBox.Show(TxtResult.Text, "타이틀", MessageBoxButtons.YesNo, MessageBoxIcon.Error); 
         }
 
         private void groupBox3_Enter(object sender, EventArgs e)
@@ -133,6 +141,7 @@ namespace UsingControlsApp
 
         private void BtnAddRoot_Click(object sender, EventArgs e)
         {
+            //문자열의 형태로 다음 노드에 추가된다 
             TrvDummy.Nodes.Add(random.Next().ToString());
 
             DisplayTreeToList();
