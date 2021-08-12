@@ -35,7 +35,7 @@ namespace Chap08App
             while (true)
             {
                 Console.WriteLine("온도를 입력:  ");
-                string temp = Console.ReadLine();
+                string temp = Console.ReadLine(); //입력값을 준다 
                 if (string.IsNullOrEmpty(temp)) break;
 
                 logger.WriteLog($"현재온도 : {temp} ");

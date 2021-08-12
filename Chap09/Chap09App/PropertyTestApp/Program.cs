@@ -9,16 +9,18 @@ namespace PropertyTestApp
     //생일정보 클래쓰
     class BirthdayInfo
     {
+        //name, birthday속성을 접근자로 제공
         private string name;
         private DateTime birthday;
 
+        //string타입의 name을 선언
         public string Name
         {
             get { return this.name; }
             set { this.name = value; }
         }
 
-
+        //datetime 타입의 Birthday를 선언
         public DateTime Birthday
         {
             get { return this.birthday; }

@@ -1,10 +1,14 @@
 ﻿using System;
 
+
+//interface 계약을 정의한다 (기본구성에 대한 기본 구현을 정의)
 namespace LoggerTestApp
 {
 
+    //ILogger 클래쓰는 매개변수가 없고 void 를 반환하는 writeLog 메서드를 구현
     interface ILogger
     {
+
         void WriteLog(string message);
     }
 
@@ -12,6 +16,7 @@ namespace LoggerTestApp
     {
         public void WriteLog(string message)
         {
+            //DateTime.Now 현재시간을 나타낸다 
             Console.WriteLine($"{DateTime.Now} : { message}");
         }
     }
