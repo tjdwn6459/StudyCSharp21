@@ -17,19 +17,16 @@ PKNU C# repository
 
 ------------------------------
 ## *Address Info *
-![1](https://user-images.githubusercontent.com/77951833/111065538-ae40b280-84fd-11eb-9d35-cc7a59be17e9.png)
+#### 이름, 전화, 주소를 입력/수정/검색/수정/삭제/출력 하는 기능
+![메뉴](https://user-images.githubusercontent.com/77951833/111065538-ae40b280-84fd-11eb-9d35-cc7a59be17e9.png)
+![입력](https://user-images.githubusercontent.com/77951833/111065546-ba2c7480-84fd-11eb-9573-6b14d6a35018.png)
+![검색](https://user-images.githubusercontent.com/77951833/111065553-c44e7300-84fd-11eb-9dc4-d67bcc379267.png)
+![수정](https://user-images.githubusercontent.com/77951833/111065555-ca445400-84fd-11eb-93ae-815a6de85ed3.png)
 
-![2](https://user-images.githubusercontent.com/77951833/111065546-ba2c7480-84fd-11eb-9573-6b14d6a35018.png)
-
-![3](https://user-images.githubusercontent.com/77951833/111065553-c44e7300-84fd-11eb-9dc4-d67bcc379267.png)
-
-![4](https://user-images.githubusercontent.com/77951833/111065555-ca445400-84fd-11eb-93ae-815a6de85ed3.png)
-
-![5](https://user-images.githubusercontent.com/77951833/111065570-d29c8f00-84fd-11eb-884c-607509968f40.png)
-
-![6](https://user-images.githubusercontent.com/77951833/111065579-dc25f700-84fd-11eb-8397-c043a0ba9ba2.png)
+![삭제](https://user-images.githubusercontent.com/77951833/111065570-d29c8f00-84fd-11eb-884c-607509968f40.png)
+![출력](https://user-images.githubusercontent.com/77951833/111065579-dc25f700-84fd-11eb-8397-c043a0ba9ba2.png)
 ---------------------------------
-## *using control app*
+## *using control app* 
 #### frmmain
 ![image](https://user-images.githubusercontent.com/77951833/129159494-d1e51a67-2b7c-458f-87c5-8747e0fd3b06.png)
 #### 사용자선택영역(글자체, 텍스트 삽입)
