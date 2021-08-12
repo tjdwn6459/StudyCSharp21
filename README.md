@@ -29,7 +29,7 @@ PKNU C# repository
 ![삭제](https://user-images.githubusercontent.com/77951833/111065570-d29c8f00-84fd-11eb-884c-607509968f40.png)
 ![출력](https://user-images.githubusercontent.com/77951833/111065579-dc25f700-84fd-11eb-8397-c043a0ba9ba2.png)
 ---------------------------------
-## [using control app]https://github.com/tjdwn6459/StudyCSharp21/tree/main/Chap20/Chap20App/UsingControlsApp 
+## [using control app](https://github.com/tjdwn6459/StudyCSharp21/tree/main/Chap20/Chap20App/UsingControlsApp)
 #### frmmain
 ![image](https://user-images.githubusercontent.com/77951833/129159494-d1e51a67-2b7c-458f-87c5-8747e0fd3b06.png)
 #### 사용자선택영역(글자체, 텍스트 삽입)
