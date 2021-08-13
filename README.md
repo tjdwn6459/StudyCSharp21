@@ -3,33 +3,33 @@ PKNU C# repository
 
 
 ## *C# 기본학습*
-- 변수 
-- 연산자
-- 메서드 및 클래쓰
-- 인터페이스 및 추상클래쓰
-- 배열, 컬렉션, 인덱스
-- 예외처리
-- Generic
-- 람다 와 LINQ
-- 대리자, 이벤트
-- 스레드, 테스크
+- [데이터 보관](https://github.com/tjdwn6459/StudyCSharp21/tree/main/Chap03)
+- [연산자](https://github.com/tjdwn6459/StudyCSharp21/tree/main/CHap04)
+- [메서드]( https://github.com/tjdwn6459/StudyCSharp21/tree/main/Chap06/Chap06App)
+- [클래쓰](https://github.com/tjdwn6459/StudyCSharp21/tree/main/Chap07/Chap07App)
+- [인터페이스 및 추상클래쓰](https://github.com/tjdwn6459/StudyCSharp21/tree/main/Chap08/Chap08App)
+- [프로퍼티](https://github.com/tjdwn6459/StudyCSharp21/tree/main/Chap09/Chap09App)
+- [배열, 컬렉션, 인덱스](https://github.com/tjdwn6459/StudyCSharp21/tree/main/Chap10/Chap10App)
+- [일반 프로그래밍](https://github.com/tjdwn6459/StudyCSharp21/tree/main/Chap11/Chap11App)
+- [예외처리](https://github.com/tjdwn6459/StudyCSharp21/tree/main/Chap12/Chap12App)
+- [대리자, 이벤트](https://github.com/tjdwn6459/StudyCSharp21/tree/main/Chap13/ChapApp13)
+- [람다 와 LINQ](https://github.com/tjdwn6459/StudyCSharp21/tree/main/Chap15/Chap15App)
+- [스레드, 테스크](https://github.com/tjdwn6459/StudyCSharp21/tree/main/Chap19/Chap19App)
+- [winform](https://github.com/tjdwn6459/StudyCSharp21/tree/main/Chap20/Chap20App)
 
 
 ------------------------------
-## *Address Info *
-![1](https://user-images.githubusercontent.com/77951833/111065538-ae40b280-84fd-11eb-9d35-cc7a59be17e9.png)
+## [Address Info](https://github.com/tjdwn6459/StudyCSharp21/tree/main/Chap99/AddressBookApp)
+#### 이름, 전화, 주소를 입력/수정/검색/수정/삭제/출력 하는 기능
+![메뉴](https://user-images.githubusercontent.com/77951833/111065538-ae40b280-84fd-11eb-9d35-cc7a59be17e9.png)
+![입력](https://user-images.githubusercontent.com/77951833/111065546-ba2c7480-84fd-11eb-9573-6b14d6a35018.png)
+![검색](https://user-images.githubusercontent.com/77951833/111065553-c44e7300-84fd-11eb-9dc4-d67bcc379267.png)
+![수정](https://user-images.githubusercontent.com/77951833/111065555-ca445400-84fd-11eb-93ae-815a6de85ed3.png)
 
-![2](https://user-images.githubusercontent.com/77951833/111065546-ba2c7480-84fd-11eb-9573-6b14d6a35018.png)
-
-![3](https://user-images.githubusercontent.com/77951833/111065553-c44e7300-84fd-11eb-9dc4-d67bcc379267.png)
-
-![4](https://user-images.githubusercontent.com/77951833/111065555-ca445400-84fd-11eb-93ae-815a6de85ed3.png)
-
-![5](https://user-images.githubusercontent.com/77951833/111065570-d29c8f00-84fd-11eb-884c-607509968f40.png)
-
-![6](https://user-images.githubusercontent.com/77951833/111065579-dc25f700-84fd-11eb-8397-c043a0ba9ba2.png)
+![삭제](https://user-images.githubusercontent.com/77951833/111065570-d29c8f00-84fd-11eb-884c-607509968f40.png)
+![출력](https://user-images.githubusercontent.com/77951833/111065579-dc25f700-84fd-11eb-8397-c043a0ba9ba2.png)
 ---------------------------------
-## *using control app*
+## [using control app](https://github.com/tjdwn6459/StudyCSharp21/tree/main/Chap20/Chap20App/UsingControlsApp)
 #### frmmain
 ![image](https://user-images.githubusercontent.com/77951833/129159494-d1e51a67-2b7c-458f-87c5-8747e0fd3b06.png)
 #### 사용자선택영역(글자체, 텍스트 삽입)
