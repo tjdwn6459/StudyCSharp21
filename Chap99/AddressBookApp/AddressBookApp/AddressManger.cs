@@ -27,8 +27,8 @@ namespace AddressBookApp
             //메뉴번호 입력
             Console.Write("메뉴를 선택하세요 >>> ");
             string input = Console.ReadLine(); // 메뉴 번호를 입력 받을 값
-            int.TryParse(input, out int result); // TryParse 값이 들어가면 읽고 만족하지 않으면 0으로 나온다
-            if (!(result > 0 && result < 7))
+            int.TryParse(input, out int result); // TryParse 값이 들어가면 읽고 만족하지 않으면 0으로 나온다, input의 입력 값을 int형으로 반환이 가능하면 출력
+            if (!(result > 0 && result < 7)) //result의 값이 
             {
                 return 0;
             }
