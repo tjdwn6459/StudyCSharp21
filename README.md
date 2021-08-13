@@ -3,8 +3,8 @@ PKNU C# repository
 
 
 ## *C# 기본학습*
-- [데이터 보관]
-- [연산자]
+- [데이터 보관](https://github.com/tjdwn6459/StudyCSharp21/tree/main/Chap03)
+- [연산자](https://github.com/tjdwn6459/StudyCSharp21/tree/main/CHap04)
 - [메서드]( https://github.com/tjdwn6459/StudyCSharp21/tree/main/Chap06/Chap06App)
 - [클래쓰](https://github.com/tjdwn6459/StudyCSharp21/tree/main/Chap07/Chap07App)
 - [인터페이스 및 추상클래쓰](https://github.com/tjdwn6459/StudyCSharp21/tree/main/Chap08/Chap08App)
